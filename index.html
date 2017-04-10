@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="SIRMly,HC">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+        <meta name="viewport" content="width=device-width,  initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <!--<base href="http://fun-x.b0.upaiyun.com/gpark_new/" />-->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/gpark.css">
+        <!--<link rel="stylesheet" href="css/styleM.css">-->
+        <title>G park 乐活补给站</title>
+    </head>
+    <body>
+        <!-- 音效 -->
+        <audio id="bgm" src="audio/bgm.mp3" autoplay preload="auto" loop="loop"></audio>
+        <audio id="m_btn_big" src="audio/btn_big.mp3" preload="auto"></audio>
+        <audio id="m_btn_mini" src="audio/btn_mini.mp3" preload="auto"></audio>
+        <audio id="m_arm" src="audio/page2_arm.mp3" preload="auto"></audio>
+        <audio id="m_drop" src="audio/page2_goods_drop.mp3" preload="auto"></audio>
+        <i class="music_switch"></i>
+        <!-- 内容 -->
+        <div class="container_h">
+            <!-- 首页 -->
+            <div id="page1" class="page_h page1_h">
+                <i class="car"></i>
+                <i class="lives1 page1-live"></i>
+                <i class="lives2 page1-live"></i>
+                <i class="lives3 page1-live"></i>
+                <i class="lives4 page1-live"></i>
+                <i class="lives5 page1-live"></i>
+                <i class="word"></i>
+                <i class="cloud1"></i>
+                <i class="cloud2"></i>
+                <i class="cloud3"></i>
+                <i class="cloud4"></i>
+                <i class="bird1"></i>
+                <i class="bird2"></i>
+                <i class="geyser"></i>
+                <i class="button" id="button-begin"></i>
+                <i class="arrow"></i>
+            </div>
+            <!-- 抓娃娃 -->
+            <div id="page2" class="page pagem-1">
+                <div class="pagem2-top"></div>
+                <div class="pagem2-difficult hide">
+                    <div class="pagem2-gan"></div>
+                    <div class="pagem2-long-wrapper">
+                        <div class="pagem2-long-inner">
+                            <div class="pagem2-long"></div>
+                            <div class="pagem2-red"></div>
+                            <div class="pagem2-clamp"></div>
+                            <div class="pagem2-building"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagem2-bottom">
+                    <div class="pagem2-directions">
+                        <i href="javascript:;" class="pagem2-direction up"></i>
+                        <i href="javascript:;" class="pagem2-direction down"></i>
+                        <i href="javascript:;" class="pagem2-direction left"></i>
+                        <i href="javascript:;" class="pagem2-direction right"></i>
+                    </div>
+                    <i href="javascript:;" class="pagem2-btn"></i>
+                    <div class="pagem2-building pagem2-building1" data-num=50></div>
+                    <div class="pagem2-building pagem2-building2" data-num=50></div>
+                    <div class="pagem2-building pagem2-building3" data-num=50></div>
+                    <div class="pagem2-building pagem2-building4" data-num=54></div>
+                    <div class="pagem2-building pagem2-building5" data-num=58></div>
+                    <div class="pagem2-building pagem2-building6" data-num=58></div>
+                    <div class="pagem2-building pagem2-building7" data-num=60></div>
+                    <div class="pagem2-building pagem2-building8" data-num=56></div>
+                    <div class="pagem2-building pagem2-building9" data-num=53></div>
+                    <div class="pagem2-building pagem2-building10" data-num=49></div>
+                </div>
+                <i class="page2-spot1 spot spot-light1"></i>
+                <i class="page2-spot2 spot spot-light2"></i>
+                <i class="page2-spot3 spot spot-light1"></i>
+                <i class="page2-spot4 spot spot-light2"></i>
+                <i class="page2-spot5 spot spot-light1"></i>
+                <i class="page2-spot6 spot spot-light2"></i>
+                <i class="page2-spot7 spot spot-light1"></i>
+                <i class="page2-spot8 spot spot-light2"></i>
+            </div>
+            <!-- 结果页 -->
+            <div id="page3" class="page3_h page_h" >
+                <div class="page3-bg"></div>
+                <div id="page3-fail" class="hide">
+                    <div class="page3-fail">
+                        <div class="page3-fail-words"></div>
+                        <div class="page3-fail-chances">你还剩 0 次机会</div>
+                        <div class="page3-fail-btn">
+                            <a id="oneMore"></a>
+                        </div>
+                        <div class="page3-get-icon">
+                            <i></i>
+                        </div>
+                        <div class="page3-fail-btn-0 hide">
+                            <div class="page3-fail-ming">
+                                <a class=""></a>
+                            </div>
+                            <div class="page3-fail-help">
+                                <a class=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="page3-fail-spot1 spot spot-light1"></i>
+                    <i class="page3-fail-spot2 spot spot-light2"></i>
+                    <i class="page3-fail-spot3 spot spot-light1"></i>
+                    <i class="page3-fail-spot4 spot spot-light2"></i>
+                    <i class="page3-fail-spot5 spot spot-light1"></i>
+                    <i class="page3-fail-spot6 spot spot-light2"></i>
+                </div>
+                <div id="page3-success" class="hide">
+                    <div class="page3-success">
+                        <div class="page3-success-award"></div>
+                        <div class="page3-success-input">
+                            <input type="tel" class="page3-success-tel" />
+                            <div class="page3-checkcodeBox">
+                                <input type="text" class="page3-success-checkcode">
+                                <div class="page3-checkcode" id="getCheckcode">获取验证码</div>
+                            </div>
+                        </div>
+                        <div class="page3-success-btn">
+                            <div class="page3-submit">
+                                <i></i>
+                            </div>
+                            <div class="page3-cancel"></div>
+                        </div>
+                    </div>
+                    <i class="page3-success-spot1 spot spot-light1"></i>
+                    <i class="page3-success-spot2 spot spot-light2"></i>
+                    <i class="page3-success-spot3 spot spot-light1"></i>
+                    <i class="page3-success-spot4 spot spot-light2"></i>
+                    <i class="page3-success-spot5 spot spot-light1"></i>
+                    <i class="page3-success-spot6 spot spot-light2"></i>
+                </div>
+                <div id="page3-get" class="hide">
+                    <div class="page3-get">
+                        <div class="page3-get-img">
+                            <img src="img/page3_ercode.jpg" alt="">
+                        </div>
+                        <div class="page3-get-btn">
+                            <div class="page3-get-more"></div>
+                            <div class="page3-get-help"></div>
+                        </div>
+                        <div class="page3-get-icon">
+                            <i></i>
+                        </div>
+                    </div>
+                    <i class="page3-get-spot1 spot spot-light1"></i>
+                    <i class="page3-get-spot2 spot spot-light2"></i>
+                    <i class="page3-get-spot3 spot spot-light1"></i>
+                    <i class="page3-get-spot4 spot spot-light2"></i>
+                    <i class="page3-get-spot5 spot spot-light1"></i>
+                    <i class="page3-get-spot6 spot spot-light2"></i>
+                </div>
+            </div>
+            <!-- 广告页 -->
+            <div class="page_h page4">
+                <div class="page4-container">
+                    <a href="http://v.qq.com/x/page/j0334ivklbi.html?ptag=4_5" class="page4-video">
+                        <i></i>
+                    </a>
+                    <a href="http://manage.wx.rongyi.com/manage/front/gpark/member/reg?mall_id=57d0d8ace4b0c24a92cdfff1" class="page4-btn"></a>
+                    <i class="page4-arrow"></i>
+                </div>
+            </div>
+            <div class="share hide">
+                <div class="share-icon"></div>
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/touch.min.js"></script>
+        <script src="js/hammer.min.js" charset="utf-8"></script>
+        <script src="js/gpark.js" charset="utf-8"></script>
+    </body>
+</html>

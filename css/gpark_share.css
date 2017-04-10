@@ -1,0 +1,189 @@
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: url('../img/pagem2.jpg')no-repeat;
+    -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+}
+.spot{
+    display: block;
+    background: url('../img/spot.png')no-repeat center center;
+    -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+    width: 6vw;
+    height: 6vw;
+    opacity: .3;
+}
+.spot1{
+    position: absolute;
+    left: 9%;
+    top: 6.5%;
+}
+.spot2{
+    position: absolute;
+    left: 24%;
+    top: 3.1%;
+}
+.spot3{
+    position: absolute;
+    left: 39%;
+    top: 1.3%;
+}
+.spot4{
+    position: absolute;
+    left: 54%;
+    top: 1.1%;
+}
+.spot5{
+    position: absolute;
+    left: 69%;
+    top: 2.5%;
+}
+.spot6{
+    position: absolute;
+    left: 84%;
+    top: 6%;
+}
+.spot-light1{
+    -webkit-animation:   spot_light2 1s linear infinite;
+    animation:  spot_light2 1s linear infinite;
+}
+.spot-light2{
+    -webkit-animation:   spot_light2 1s .5s linear infinite;
+    animation:   spot_light2 1s .5s linear infinite;
+}
+@-webkit-keyframes spot_light2 {
+    0% { opacity: .3;}
+    1% { opacity: 1 ;}
+    50% { opacity: 1}
+    51% { opacity: .3}
+    100% { opacity: .3; }
+}
+@keyframes spot_light2 {
+    0% { opacity: .3;}
+    1% { opacity: 1 ;}
+    50% { opacity: 1}
+    51% { opacity: .3}
+    100% { opacity: .3; }
+}
+.page-help{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 76.533vw;
+    height: 115.47vw;
+}
+.help-board{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 76.533vw;
+    height: 115.47vw;
+    background: url('../img/result_board1.png')no-repeat center center;
+    -webkit-background-size: contain;
+            background-size: contain;
+    z-index: 2;
+}
+.help-lives{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 2vw;
+    margin-top: 41vw;
+}
+.help-lives i{
+    display: block;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 10.27vw;
+    height: 4.667vw;
+}
+.dead{
+    background: url('../img/help_dead.png')no-repeat center center;
+    -webkit-background-size: contain;
+            background-size: contain;
+}
+.live{
+    background: url('../img/help_live.png')no-repeat center center;
+    -webkit-background-size: contain;
+            background-size: contain;
+}
+.help-word{
+    background: url('../img/help_words.png')no-repeat center center;
+    -webkit-background-size: contain;
+            background-size: contain;
+    width: 57.07vw;
+    height: 5.867vw;
+    margin-left: 11vw;
+    padding-top: .1px;
+    margin-top: 10vw;
+}
+.help-word i{
+    display: block;
+    background: url('../img/help_num_0.png')no-repeat center center;
+    -webkit-background-size: contain;
+            background-size: contain;
+    width: 4.533vw;
+    height: 5.467vw;
+    margin-left: 11.5vw;
+    margin-top: -.05vw;
+}
+.help-btn-help{
+    padding-top: .1px;
+    width: 37.47vw;
+    height: 12.8vw;
+    background: url('../img/btn_bg.png')no-repeat center center;
+    -webkit-background-size: contain;
+            background-size: contain;
+    margin-left: 22vw;
+    margin-top: 9vw;
+}
+.help-btn-help a{
+    display: block;
+    background: url('../img/help_btn_help.png')no-repeat center center;
+    -webkit-background-size: contain;
+            background-size: contain;
+    width: 34.93vw;
+    height: 10.4vw;
+    margin-top: 2vw;
+    margin-left: 2.3vw;
+}
+.help-btn-needhelp{
+    padding-top: .1px;
+    width: 37.47vw;
+    height: 12.8vw;
+    background: url('../img/btn_bg.png')no-repeat center center;
+    -webkit-background-size: contain;
+            background-size: contain;
+    margin-left: 22vw;
+    margin-top: 5vw;
+}
+.help-btn-needhelp a{
+    display: block;
+    background: url('../img/help_btn_needhelp.png')no-repeat center center;
+    -webkit-background-size: contain;
+            background-size: contain;
+    width: 34.93vw;
+    height: 10.4vw;
+    margin-top: 2vw;
+    margin-left: 2.3vw;
+}
