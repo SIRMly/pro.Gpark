@@ -539,8 +539,8 @@ html, body {
     background: url('../img/page1_bg_01.png') no-repeat;
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
-    -webkit-transform: translateY(-5vh);
-    transform: translateY(-5vh);
+    -webkit-transform: translateY(0vh);
+    transform: translateY(0vh);
     -webkit-transition: -webkit-transform 2s linear;
     transition: -webkit-transform 2s linear;
 }
@@ -921,8 +921,8 @@ html, body {
 }
 
 #page2 {
-    -webkit-transform: translateY(95vh);
-    transform: translateY(95vh);
+    -webkit-transform: translateY(100vh);
+    transform: translateY(100vh);
 }
 
 .page2-spot1 {

@@ -659,6 +659,7 @@ $(document).ready(function () {
 
         // swipe to next page
         function swipeLoad() {
+            console.log("swipeLoad");
             var hammertime = new Hammer(document.querySelector('#page3'));
             hammertime.on('swipeup', function (ev) {
                 $('#page3 .page3-get-icon').hide();
@@ -693,27 +694,7 @@ $(document).ready(function () {
         var moveTop = $('.container_h').height() - $('.page4-container').height() - 40;
         console.log('top:' + moveTop);
         var mc = new Hammer(document.querySelector('.page4'));
-        mc.get('pan').set({direction: Hammer.DIRECTION_ALL});
-        mc.on("panmove", function (ev) {
-            var distance = ev.velocityY * 20;
-            document.getElementsByClassName('page4')[0].scrollTop -= distance;
-            console.log(document.getElementsByClassName('page4')[0].scrollTop);
-
-            // if (moveDistance > moveTop && moveDistance < 0){
-            //   moveDistance += ev.velocityY * 20;
-            //   $('.page4-container').css('transform', 'translateY('+ moveDistance +'px)')
-            // } else {
-            //   if (moveDistance < moveTop){
-            //     moveDistance = moveTop + 0.0001;
-            //   } else {
-            //     moveDistance =  -0.0001;
-            //   }
-            // }
-            if (!hide) {
-                $('.page4-arrow').hide();
-                hide = true;
-            }
-        });
+        mc.get('swipe').set({direction: Hammer.DIRECTION_VERTICAL});
     }
 
     /* ========= functions ===========*/
